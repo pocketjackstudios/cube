@@ -1,1 +1,1 @@
-git 
+Experiment with MindAR - based in this link https://hiukim.github.io/mind-ar-js-doc/quick-start/overview
