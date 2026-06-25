@@ -8,19 +8,19 @@
 
 <body>
     <a-scene
-        mindar-image="imageTargetSrc: https://github.com/pocketjackstudios/cube/blob/main/assets/targets/targets.mind;"
+        mindar-image="imageTargetSrc: https://raw.githubusercontent.com/pocketjackstudios/cube/main/assets/targets/targets.mind;"
         color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false"
         device-orientation-permission-ui="enabled: false">
         <a-assets>
-            <img id="card" src="https://github.com/pocketjackstudios/cube/blob/main/assets/image/l_pj.png" />
+            <img id="card" src="https://raw.githubusercontent.com/pocketjackstudios/cube/main/assets/image/l_pj.png" />
             <a-asset-item id="model"
-                src="https://github.com/pocketjackstudios/cube/blob/main/assets/models/cube.gltf"></a-asset-item>
+                src="https://raw.githubusercontent.com/pocketjackstudios/cube/main/assets/models/cube.gltf"></a-asset-item>
         </a-assets>
 
         <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
         <a-entity mindar-image-target="targetIndex: 0">
             <a-plane src="#card" position="0 0 0" height="0.552" width="1" rotation="0 0 0"></a-plane>
-            <a-gltf-model rotation="0 0 0" position="0 0 0" scale="1 1 1 " src="#model">
+            <a-gltf-model rotation="0 0 0" position="0 0 0.1" scale="0.2 0.2 0.2" src="#model"></a-gltf-model>
         </a-entity>
     </a-scene>
 </body>
